@@ -2,13 +2,7 @@ import java.util.Scanner;
 
 public class Windchill {
 
-    /**
-     * Metoden calculateWindChill beräknar vindkylfaktorn (WCT) baserat på temperatur och vindhastighet.
-     *
-     * @param temperature Temperaturen i Celsius. Datatypen double tillåter decimaltal.
-     * @param windSpeed Vindhastigheten i km/h. Även här tillåter datatypen double decimaltal.
-     * @return Beräknad WCT.
-     */
+
     public static double calculateWindChill(double temperature, double windSpeed) {
         // Omvandla vindhastighet från m/s till km/h om så behövs
         double speedInKmh = windSpeed * 3.6;
