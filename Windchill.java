@@ -7,8 +7,7 @@ public class Windchill {
         // Omvandla vindhastighet från m/s till km/h om så behövs
         double speedInKmh = windSpeed * 3.6;
         // Beräkna WCT enligt formeln
-        double wct = 13.12 + 0.6215 * temperature - 11.37 * Math.pow(speedInKmh, 0.16) + 0.3965 * temperature * Math.pow(speedInKmh, 0.16);
-        return wct;
+        return 13.12 + 0.6215 * temperature - 11.37 * Math.pow(speedInKmh, 0.16) + 0.3965 * temperature * Math.pow(speedInKmh, 0.16);
     }
 
     public static void main(String[] args) {
